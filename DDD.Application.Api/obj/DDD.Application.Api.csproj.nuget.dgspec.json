@@ -143,7 +143,7 @@
         "projectName": "DDD.Infra.MemoryDb",
         "projectPath": "C:\\Users\\luana\\source\\repos\\Universidade\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\DDD.Infra.MemoryDb.csproj",
         "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luana\\Source\\Repos\\Universidade\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\obj\\",
+        "outputPath": "C:\\Users\\luana\\source\\repos\\Universidade\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luana\\AppData\\Roaming\\NuGet\\NuGet.Config",

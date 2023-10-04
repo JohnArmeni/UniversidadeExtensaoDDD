@@ -24,6 +24,69 @@ namespace DDD.Infra.SQLServer.Migrations
 
             modelBuilder.HasSequence("UserSequence");
 
+            modelBuilder.Entity("DDD.Domain.ExtensaoContext.VeterinariaContext.ConsultaVeterinaria", b =>
+                {
+                    b.Property<int>("ConsultaId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ConsultaId"));
+
+                    b.Property<int>("AnimalId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Data")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("VeterinariaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ConsultaId");
+
+                    b.HasIndex("AnimalId");
+
+                    b.HasIndex("VeterinariaId");
+
+                    b.ToTable("Consulta", (string)null);
+                });
+
+            modelBuilder.Entity("DDD.Domain.ExtensaoContext.VeterinarioContext.Animal", b =>
+                {
+                    b.Property<int>("AnimalId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AnimalId"));
+
+                    b.Property<string>("Cor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DonoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Genero")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Idade")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NomeAnimal")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Raca")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AnimalId");
+
+                    b.HasIndex("DonoId");
+
+                    b.ToTable("Animal", (string)null);
+                });
+
             modelBuilder.Entity("DDD.Domain.PicContext.Projeto", b =>
                 {
                     b.Property<int>("ProjetoId")
@@ -147,6 +210,20 @@ namespace DDD.Infra.SQLServer.Migrations
                     b.UseTpcMappingStrategy();
                 });
 
+            modelBuilder.Entity("DDD.Domain.ExtensaoContext.VeterinariaContext.Dono", b =>
+                {
+                    b.HasBaseType("DDD.Domain.UserManagementContext.User");
+
+                    b.ToTable("Dono", (string)null);
+                });
+
+            modelBuilder.Entity("DDD.Domain.ExtensaoContext.VeterinarioContext.Veterinaria", b =>
+                {
+                    b.HasBaseType("DDD.Domain.UserManagementContext.User");
+
+                    b.ToTable("Veterinario", (string)null);
+                });
+
             modelBuilder.Entity("DDD.Domain.PicContext.Pesquisador", b =>
                 {
                     b.HasBaseType("DDD.Domain.UserManagementContext.User");
@@ -163,6 +240,36 @@ namespace DDD.Infra.SQLServer.Migrations
                     b.HasBaseType("DDD.Domain.UserManagementContext.User");
 
                     b.ToTable("Aluno", (string)null);
+                });
+
+            modelBuilder.Entity("DDD.Domain.ExtensaoContext.VeterinariaContext.ConsultaVeterinaria", b =>
+                {
+                    b.HasOne("DDD.Domain.ExtensaoContext.VeterinarioContext.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DDD.Domain.ExtensaoContext.VeterinarioContext.Veterinaria", "Veterinaria")
+                        .WithMany()
+                        .HasForeignKey("VeterinariaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Animal");
+
+                    b.Navigation("Veterinaria");
+                });
+
+            modelBuilder.Entity("DDD.Domain.ExtensaoContext.VeterinarioContext.Animal", b =>
+                {
+                    b.HasOne("DDD.Domain.ExtensaoContext.VeterinariaContext.Dono", "Dono")
+                        .WithMany("Animais")
+                        .HasForeignKey("DonoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dono");
                 });
 
             modelBuilder.Entity("DDD.Domain.PicContext.Projeto", b =>
@@ -189,6 +296,11 @@ namespace DDD.Infra.SQLServer.Migrations
                     b.Navigation("Aluno");
 
                     b.Navigation("Disciplina");
+                });
+
+            modelBuilder.Entity("DDD.Domain.ExtensaoContext.VeterinariaContext.Dono", b =>
+                {
+                    b.Navigation("Animais");
                 });
 
             modelBuilder.Entity("DDD.Domain.PicContext.Pesquisador", b =>

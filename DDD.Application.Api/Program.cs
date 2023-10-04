@@ -13,6 +13,9 @@ builder.Services.AddScoped<IAlunoRepository, AlunoRepositorySqlServer>();
 builder.Services.AddScoped<IDisciplinaRepository, DisciplinaRepositorySqlServer>();
 builder.Services.AddScoped<IMatriculaRepository, MatriculaRepositorySqlServer>();
 builder.Services.AddScoped<IVeterinariaRepository, VeterinariaRepositorySqlServer>();
+builder.Services.AddScoped<IConsultaRepository, ConsultaRepositorySqlServer>();
+builder.Services.AddScoped<IAnimalRepository, AnimalRepositorySqlServer>();
+builder.Services.AddScoped<IDonoRepository, DonoRepositorySqlServer>();
 builder.Services.AddScoped<SqlContext, SqlContext>();
 
 builder.Services.AddControllers().AddJsonOptions(x =>

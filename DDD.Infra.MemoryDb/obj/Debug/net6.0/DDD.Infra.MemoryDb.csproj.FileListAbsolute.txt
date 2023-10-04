@@ -1,0 +1,17 @@
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\bin\Debug\net6.0\DDD.Infra.MemoryDb.deps.json
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\bin\Debug\net6.0\DDD.Infra.MemoryDb.dll
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\bin\Debug\net6.0\DDD.Infra.MemoryDb.pdb
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\bin\Debug\net6.0\DDD.Domain.dll
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\bin\Debug\net6.0\DDD.Infra.SQLServer.dll
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\bin\Debug\net6.0\DDD.Domain.pdb
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\bin\Debug\net6.0\DDD.Infra.SQLServer.pdb
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\DDD.Infra.MemoryDb.csproj.AssemblyReference.cache
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\DDD.Infra.MemoryDb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\DDD.Infra.MemoryDb.AssemblyInfoInputs.cache
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\DDD.Infra.MemoryDb.AssemblyInfo.cs
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\DDD.Infra.MemoryDb.csproj.CoreCompileInputs.cache
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\DDD.Infra.MemoryDb.csproj.CopyComplete
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\DDD.Infra.MemoryDb.dll
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\refint\DDD.Infra.MemoryDb.dll
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\DDD.Infra.MemoryDb.pdb
+C:\Users\luana\source\repos\Universidade\PlataformaUniversidadeDDD\DDD.Infra.MemoryDb\obj\Debug\net6.0\ref\DDD.Infra.MemoryDb.dll
